@@ -1,0 +1,45 @@
+.block {
+  width: 100px;
+  height: 100px;
+  display:block;
+  background-color: yellow;
+  border: 2px solid black;
+  position: absolute;
+  top: 250px;
+  left: 600px;
+  transition: all .1s;
+}
+
+.block-remove {
+  display: none;
+}
+
+.contextmenu-container {
+  width: 100px;
+  height: auto;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+  position: fixed;
+  background-color: yellowgreen;
+  text-align: center;
+  display: none;
+}
+
+.contextmenu-container.show {
+  display: block;
+}
+
+.contextmenu-item {
+  height: 50px;
+  width: 100%;
+  height: auto;
+  border: 2px solid grey;
+}
+
+.contextmenu-item:hover {
+  background-color: grey;
+  cursor: pointer;
+}
